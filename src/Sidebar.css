@@ -1,0 +1,74 @@
+.nav-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #060b40;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav.open {
+  width: 300px;
+}
+
+.sidenav a {
+  padding: 15px 8px 12px 22px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #e8eaed;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  white-space: nowrap;
+  border: 2px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #1d268e;
+}
+
+.sidenav a:hover {
+  background-color: #dc2e42;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav-header {
+  color: #e8eaed;
+  font-size: 24px;
+  padding: 8px 8px 8px 32px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navItem{
+  border: 10px solid #e8eaed;
+}
